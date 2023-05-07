@@ -1,0 +1,16 @@
+.navbar{
+  padding: 10px;
+  background: #f4f5f6;
+}
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*oculta el icono cuando la pantalla es muy pequena */
+@media screen and (max-width: 767px) {
+  .navbar-brand{
+    display: none;
+  }
+  
+}
