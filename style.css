@@ -1,3 +1,15 @@
+/*estilos generales*/
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+h1{
+  font-size: 2.5rem;
+
+}
+
 .navbar{
   padding: 10px;
   background: #f4f5f6;
@@ -5,12 +17,44 @@
 .navbar-collapse{
   align-items: center;
   justify-content: space-between;
+  
 }
 
+
+.imgBorder{
+  border-radius: 50%;
+  width:150px;
+}
+
+/*seccion hero*/
+.hero{
+  background-color: #f4f5f6;
+  min-height: 450px;
+  text-align: center;
+
+}
+
+.hero-principal h2{
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+.hero-principal h1{
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+/*Seccion responsiva*/
 /*oculta el icono cuando la pantalla es muy pequena */
 @media screen and (max-width: 767px) {
   .navbar-brand{
     display: none;
+  }
+  
+}
+/*a partir de los 700px se aplica este estilo*/
+@media screen and (min-width:700px) {
+  .hero-inferior-imagen{
+    max-width: 600px;
   }
   
 }
