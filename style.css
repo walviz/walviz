@@ -10,6 +10,8 @@ h1{
 
 }
 
+
+
 .navbar{
   padding: 10px;
   background: #f4f5f6;
@@ -24,6 +26,26 @@ h1{
 .imgBorder{
   border-radius: 50%;
   width:150px;
+}
+
+.seccion-oscura{
+  color: white;
+  background-color: #1b1b32;/*color fredodecap*/
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo{
+  font-size: 2rem;
+  padding: 15px 0px;
+  font-family: 'Bruno Ace SC', cursive;;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
 }
 
 /*seccion hero*/
@@ -43,15 +65,74 @@ h1{
   font-family: 'Bruno Ace SC', cursive;
 }
 
+
+/*abaut me*/
+.sobre-mi{
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor{/*este tipo de contenedor solo aplica para lo que esta dentro del contenedor sobre mi*/
+  max-width: 600px;/*ancho maximo*/
+  text-align: center;
+
+}
+
+/* experiencia */
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.15s ease-in;
+}
+.experiencia .columna:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.experiencia i{
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 16px;
+  border-radius: 50%;
+
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+
+}
+
+.badge {
+  margin: 5px;
+}
+
+
 /*Seccion responsiva*/
-/*oculta el icono cuando la pantalla es muy pequena */
+/*oculta el icono cuando la pantalla es menor a  767px */
 @media screen and (max-width: 767px) {
   .navbar-brand{
     display: none;
   }
   
 }
-/*a partir de los 700px se aplica este estilo*/
+/*cuando el ancho supera los 700px la imagen conserva el largo de 600px*/
 @media screen and (min-width:700px) {
   .hero-inferior-imagen{
     max-width: 600px;
