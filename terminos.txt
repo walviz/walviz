@@ -27,6 +27,12 @@ estructura de la grid las columnas de los elementos de una fila deben sumar 12 p
 .flex-wrap-reverse e redistribuir pero en orden invertido
 
 
+para organizar el orden le los flexbox son 
+<div class="row">
+<div class="col-12 col-md-6 col-lg-4"><!--orden// pequeno mediano grande-->
+
+para alinear texto en el centro 
+class="text-center"
 
 
 

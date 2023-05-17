@@ -44,8 +44,26 @@ h1{
   font-family: 'Bruno Ace SC', cursive;;
 }
 
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
 .seccion-texto {
   font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
 }
 
 /*seccion hero*/
@@ -75,7 +93,6 @@ h1{
 .sobre-mi .contenedor{/*este tipo de contenedor solo aplica para lo que esta dentro del contenedor sobre mi*/
   max-width: 600px;/*ancho maximo*/
   text-align: center;
-
 }
 
 /* experiencia */
@@ -124,11 +141,92 @@ h1{
 }
 
 
+/*proyectos*/
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+/*overlay= contenido sobre la imagen*/
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;/*oculta la imagen*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/*sirve para mostrar la imagen qeu esta oculta*/
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+/*cambia la opacidad de 0 a 1 para mostrar el contenido*/
+.proyecto:hover .overlay {
+  opacity: 1;
+  
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+
 /*Seccion responsiva*/
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 15px;
+  }
+
+  .seccion-titulo {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
 /*oculta el icono cuando la pantalla es menor a  767px */
 @media screen and (max-width: 767px) {
   .navbar-brand{
     display: none;
+  }
+
+  .overlay i {
+    font-size: 40px;
   }
   
 }
