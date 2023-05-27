@@ -203,7 +203,22 @@ h1{
   margin: 10px;
 }
 
+/*articulos*/
+.articulos {
+  min-height: 500px;/*altura minima*/
+  padding: 30px;
+}
 
+.articulos .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+
+}
+
+.articulos .card-header {
+  font-weight: bold;
+}
 
 /*Seccion responsiva*/
 
