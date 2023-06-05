@@ -234,6 +234,71 @@ h1{
   }
 }
 
+
+
+
+/*Testimonios*/
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.testimonio-imagen{
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  
+}
+
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.testimonio-info p{
+  margin-bottom: 0;
+
+}
+
+.testimonio-info .cliente {
+  font-size: 1.2rem;
+
+}
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+
+}
+
+
+
 /*oculta el icono cuando la pantalla es menor a  767px */
 @media screen and (max-width: 767px) {
   .navbar-brand{
@@ -245,6 +310,23 @@ h1{
   }
   
 }
+
+
+
+@media screen and (max-width: 800px) {
+
+  .testimonio-imagen{
+    height: 120px;
+    width: 120px;
+  }
+  
+  .testimonio-texto {
+    font-size: 18px;  
+  }
+  
+}
+
+
 /*cuando el ancho supera los 700px la imagen conserva el largo de 600px*/
 @media screen and (min-width:700px) {
   .hero-inferior-imagen{
