@@ -45,20 +45,20 @@
         </a>
         <ul class="navbar-nav d-flex justify-content=center aling-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
+            <a class="nav-link" href="#proyectos">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contacto</a>
+            <a class="nav-link" href="#contacto">contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 <!-- seccion hero -->
-<section class="hero aling-items-stretch">
+<section id="hero" class="hero aling-items-stretch">
   <div class="hero-principal">
     <img src="https://avatars.githubusercontent.com/u/115000755?v=4" alt="imiagen de perfil william"  class="rounded-circle imgBorder">
     <h1>Hola soy William Alviz</h1>
@@ -70,7 +70,7 @@
 </section>
 
 <!-- abautme -->
-<section class="sobre-mi seccion-oscura">
+<section id="sobre-mi" class="sobre-mi seccion-oscura">
   <div class="contenedor">
     <div>
       <h2 class="seccion-titulo">Conoce a William Alviz</h2>
@@ -81,7 +81,7 @@
 </section>
 
 <!-- experkiencia -->
-<section class="experiencia seccion-clara">
+<section id="experiencia" class="experiencia seccion-clara">
   <div class="container text-center">
     <div class="row">
       <!-- desarrollo web -->
@@ -135,7 +135,7 @@
 </section>
 
 <!-- proyectos -->
-<section class="proyectos-recientes seccion-clara d-flex flex-column">
+<section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
   <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
   <h3 class="seccion-descripcion">Estos son algunos proyectos que he realizado recientemente...</h3>
   <!-- galeria de proyectos -->
@@ -331,6 +331,55 @@
   </div>
 
 </section>
+
+<!-- contactos -->
+<section id="contacto" class="contacto seccion-oscura">
+  <div class="container">
+    <div class="container text-center rectangulo d-flex justify-content-evenly">
+      <div class="row">
+        <div class="col-12 col-md-4 seccion-titulo">
+          Hablemos
+        </div>
+        <div class="col-12 col-md-4 descripcion">
+          contactame para desarollo web
+        </div>
+        <div class="col-12 col-md-4 ">
+          <a href="mailto:william.marte">
+            <button>
+              Contacto
+              <i class="bi bi-envelope-at"></i>
+            </button>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- pie de pagina -->
+<footer class="seccion-oscura d-flex flex-column aling-items-center justify-content-center">
+  <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="">
+  <p class="footer-text text-center">Aprendo y creo todos los dias.<br>Creemos un proyecto juntos</p>
+  <div class=" iconos-redes-sociales d-flex flex-wrap aling-items-center justify-content-center">
+    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok"></i></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></i></a>
+  </div>
+
+  <div class="derechos-de-autor text-center">
+    Creado por William Alviz (2023) &#169;
+  </div>
+  
+
+
+</footer>
+
 
 <!-- Bootstrap script v5.3.0 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
